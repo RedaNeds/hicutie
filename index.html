@@ -116,10 +116,24 @@
       margin: 10px 0;
     }
 
+    .gif-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
     .fireworks {
-      width: min(380px, 90vw);
-      margin: 0 auto;
-      display: block;
+      width: min(280px, 45vw);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.15);
+    }
+
+    .indian-dance {
+      width: min(280px, 45vw);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.15);
     }
 
     @keyframes pop {
@@ -179,15 +193,22 @@
     </section>
 
     <!-- HINT -->
-    <div class="hint" id="hint">“No” seems a bit shy 😈</div>
+    <div class="hint" id="hint">"No" seems a bit shy 😈</div>
 
     <section class="result" id="result">
-      <h2>YAY! 🎉</h2>
-      <img
-        class="fireworks"
-        src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
-        alt="Fireworks"
-      />
+      <h2>YAY! 🎉💃</h2>
+      <div class="gif-container">
+        <img
+          class="fireworks"
+          src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
+          alt="Fireworks"
+        />
+        <img
+          class="indian-dance"
+          src="https://media.giphy.com/media/3XsniM1pgA5R6ZkCeX/giphy.gif"
+          alt="Bollywood Dance - Morni Banke"
+        />
+      </div>
     </section>
   </main>
 
@@ -300,6 +321,3 @@
   </script>
 </body>
 </html>
-
-
-
